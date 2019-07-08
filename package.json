@@ -1,0 +1,38 @@
+{
+  "name": "nekoview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron .",
+    "build": "build --win --x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMHStudio/Neko-view.git"
+  },
+  "author": "PMH Studio / PMH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PMHStudio/Neko-view/issues"
+  },
+  "homepage": "https://github.com/PMHStudio/Neko-view#readme",
+  "dependencies": {
+    "superagent": "^5.1.0"
+  },
+  "devDependencies": {
+    "electron": "^5.0.6",
+    "electron-builder": "^20.44.4"
+  },
+  "build": {
+    "appId": "kr.kro.pmhstudio.neko",
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "publisherName": "PMH Studio / PMH"
+    }
+  }
+}
